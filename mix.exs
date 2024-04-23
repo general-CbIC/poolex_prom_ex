@@ -4,10 +4,17 @@ defmodule PoolexPromEx.MixProject do
   def project do
     [
       app: :poolex_prom_ex,
-      version: "0.1.0",
+      deps: deps(),
+      description: "PromEx integration for Poolex",
+      docs: docs(),
       elixir: "~> 1.11",
+      elixirc_options: [
+        warnings_as_errors: true
+      ],
+      package: package(),
+      source_url: "https://github.com/general-CbIC/poolex_prom_ex",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      version: "0.1.0"
     ]
   end
 
@@ -29,6 +36,26 @@ defmodule PoolexPromEx.MixProject do
       {:ex_check, "~> 0.15.0", only: [:dev], runtime: false},
       {:ex_doc, ">= 0.0.0", only: [:dev], runtime: false},
       {:makeup_diff, ">= 0.0.0", only: [:dev], runtime: false}
+    ]
+  end
+
+  defp package do
+    [
+      licenses: ["MIT"],
+      links: %{
+        "Changelog" => "https://github.com/general-CbIC/poolex_prom_ex/blob/develop/CHANGELOG.md",
+        "GitHub" => "https://github.com/general-CbIC/poolex_prom_ex",
+        "Sponsor" => "https://github.com/sponsors/general-CbIC"
+      }
+    ]
+  end
+
+  defp docs do
+    [
+      main: "readme",
+      extras: [
+        "README.md"
+      ]
     ]
   end
 end
