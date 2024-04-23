@@ -1,5 +1,11 @@
 # PoolexPromEx
 
+<!-- ![Build and tests workflow](https://github.com/general-CbIC/poolex_prom_ex/actions/workflows/ci-tests.yml/badge.svg) -->
+[![hex.pm version](https://img.shields.io/hexpm/v/poolex_prom_ex.svg?style=flat)](https://hex.pm/packages/poolex_prom_ex)
+[![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg?style=flat)](https://hexdocs.pm/poolex_prom_ex/)
+[![License](https://img.shields.io/hexpm/l/poolex_prom_ex.svg?style=flat)](https://github.com/general-CbIC/poolex_prom_ex/blob/main/LICENSE)
+[![Total Download](https://img.shields.io/hexpm/dt/poolex_prom_ex.svg?style=flat)](https://hex.pm/packages/poolex_prom_ex)
+
 This is a plugin for your application to collect [Poolex's](https://github.com/general-CbIC/poolex) metrics with PromEx.
 
 ## Requirements
