@@ -14,7 +14,7 @@ defmodule PoolexPromEx.MixProject do
       package: package(),
       source_url: "https://github.com/general-CbIC/poolex_prom_ex",
       start_permanent: Mix.env() == :prod,
-      version: "0.1.0"
+      version: "0.1.1"
     ]
   end
 
