@@ -14,7 +14,7 @@ defmodule PoolexPromEx.MixProject do
       package: package(),
       source_url: "https://github.com/general-CbIC/poolex_prom_ex",
       start_permanent: Mix.env() == :prod,
-      version: "0.1.0"
+      version: "0.1.1"
     ]
   end
 
@@ -26,7 +26,7 @@ defmodule PoolexPromEx.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      # {:poolex, "0.9.0-rc.0", optional: true},
+      {:poolex, "~> 0.9.0"},
       {:prom_ex, "~> 1.0"},
 
       # Development deps
