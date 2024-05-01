@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/hexpm/l/poolex_prom_ex.svg?style=flat)](https://github.com/general-CbIC/poolex_prom_ex/blob/main/LICENSE)
 [![Total Download](https://img.shields.io/hexpm/dt/poolex_prom_ex.svg?style=flat)](https://hex.pm/packages/poolex_prom_ex)
 
-This is a plugin for your application to collect [Poolex's](https://github.com/general-CbIC/poolex) metrics with PromEx.
+This is a plugin for your application to collect [Poolex's](https://github.com/general-CbIC/poolex) metrics with [PromEx](https://github.com/akoutmos/prom_ex).
 
 ## Requirements
 
