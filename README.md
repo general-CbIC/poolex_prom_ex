@@ -1,6 +1,6 @@
 # PoolexPromEx
 
-![Build and tests workflow](https://github.com/general-CbIC/poolex_prom_ex/actions/workflows/ci-tests.yml/badge.svg)
+![Build and static analyze](https://github.com/general-CbIC/poolex_prom_ex/actions/workflows/ci-build.yml/badge.svg)
 [![hex.pm version](https://img.shields.io/hexpm/v/poolex_prom_ex.svg?style=flat)](https://hex.pm/packages/poolex_prom_ex)
 [![Hex Docs](https://img.shields.io/badge/hex-docs-lightgreen.svg?style=flat)](https://hexdocs.pm/poolex_prom_ex/)
 [![License](https://img.shields.io/hexpm/l/poolex_prom_ex.svg?style=flat)](https://github.com/general-CbIC/poolex_prom_ex/blob/main/LICENSE)
