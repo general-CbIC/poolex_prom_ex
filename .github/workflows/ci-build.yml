@@ -35,8 +35,8 @@ jobs:
           otp-version: ${{matrix.otp}}
           elixir-version: ${{matrix.elixir}}
       - name: Fetch dependencies
-        run: mix deps.get
-      - name: Launch tests
+        run: mix deps.get --only prod
+      - name: Compile
         run: mix compile
   static-analysis:
     runs-on: ubuntu-latest
