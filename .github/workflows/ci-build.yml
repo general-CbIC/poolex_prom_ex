@@ -37,7 +37,7 @@ jobs:
       - name: Fetch dependencies
         run: mix deps.get --only prod
       - name: Compile
-        run: mix compile
+        run: MIX_ENV=prod mix compile
   static-analysis:
     runs-on: ubuntu-latest
     name: Static analysis
