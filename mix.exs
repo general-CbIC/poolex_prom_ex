@@ -7,14 +7,14 @@ defmodule PoolexPromEx.MixProject do
       deps: deps(),
       description: "PromEx integration for Poolex",
       docs: docs(),
-      elixir: "~> 1.11",
+      elixir: "~> 1.12",
       elixirc_options: [
         warnings_as_errors: true
       ],
       package: package(),
       source_url: "https://github.com/general-CbIC/poolex_prom_ex",
       start_permanent: Mix.env() == :prod,
-      version: "0.1.1"
+      version: "0.2.0"
     ]
   end
 
@@ -33,7 +33,7 @@ defmodule PoolexPromEx.MixProject do
       {:credo, ">= 0.0.0", only: [:dev], runtime: false},
       {:dialyxir, ">= 0.0.0", only: [:dev], runtime: false},
       {:doctor, ">= 0.0.0", only: [:dev], runtime: false},
-      {:ex_check, "~> 0.15.0", only: [:dev], runtime: false},
+      {:ex_check, "~> 0.16.0", only: [:dev], runtime: false},
       {:ex_doc, ">= 0.0.0", only: [:dev], runtime: false},
       {:makeup_diff, ">= 0.0.0", only: [:dev], runtime: false}
     ]

@@ -1,0 +1,65 @@
+name: Build and static analyze
+
+on:
+  push:
+    branches: 
+      - main
+      - develop
+  pull_request:
+    branches: [ develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: OTP ${{matrix.otp}} / Elixir ${{matrix.elixir}}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - elixir: '1.12'
+            otp: '24'
+          - elixir: '1.13'
+            otp: '25'
+          - elixir: '1.14'
+            otp: '25'
+          - elixir: '1.15'
+            otp: '26'
+          - elixir: '1.16'
+            otp: '26'
+          - elixir: '1.17'
+            otp: '27'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: erlef/setup-beam@v1
+        with:
+          otp-version: ${{matrix.otp}}
+          elixir-version: ${{matrix.elixir}}
+      - name: Fetch dependencies
+        run: mix deps.get --only prod
+      - name: Compile
+        run: MIX_ENV=prod mix compile
+  static-analysis:
+    runs-on: ubuntu-latest
+    name: Static analysis
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set mix.lock file hash
+        run: |
+          mix_hash="${{ hashFiles(format('{0}{1}', github.workspace, '/mix.lock')) }}"
+          echo "mix_hash=$mix_hash" >> $GITHUB_ENV
+      - name: Cache PLT files
+        uses: actions/cache@v4
+        with:
+          path: |
+            _build/dev/*.plt
+            _build/dev/*.plt.hash
+          key: plt-cache-${{ env.mix_hash }}
+          restore-keys: |
+            plt-cache-
+      - name: Run `mix check`
+        uses: erlef/setup-beam@v1
+        with:
+          otp-version: '27'
+          elixir-version: '1.17'
+      - run: mix do deps.get, compile
+      - run: mix check
