@@ -13,7 +13,7 @@ This is a plugin for your application to collect [Poolex's](https://github.com/g
 | Requirement | Version |
 |-------------|---------|
 | Erlang/OTP  | >= 24   |
-| Elixir      | >= 1.11 |
+| Elixir      | >= 1.12 |
 
 ## Installation
 
