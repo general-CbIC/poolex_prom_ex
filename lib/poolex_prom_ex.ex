@@ -7,7 +7,7 @@ defmodule Poolex.PromEx do
   ```elixir
   defp deps do
     [
-      {:poolex_prom_ex, "~> 0.1.0"}
+      {:poolex_prom_ex, "~> 0.2.0"}
     ]
   end
   ```
