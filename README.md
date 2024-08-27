@@ -10,10 +10,11 @@ This is a plugin for your application to collect [Poolex's](https://github.com/g
 
 ## Requirements
 
-| Requirement | Version |
-|-------------|---------|
-| Erlang/OTP  | >= 24   |
-| Elixir      | >= 1.12 |
+| Requirement | Version   |
+|-------------|-----------|
+| Erlang/OTP  | >= 24     |
+| Elixir      | >= 1.12   |
+| Poolex      | ~> 0.10.0 |
 
 ## Installation
 
