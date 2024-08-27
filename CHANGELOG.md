@@ -7,19 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.2.0]
+## [0.2.0] - 2024-08-19
 
 ### Changed
 
 - Minimum required Elixir version bumped to `1.12`
 
-## [0.1.1]
+## [0.1.1] - 2024-04-24
 
 ### Changed
 
 - Added poolex dependency to ensure compatibility.
 
-## [0.1.0]
+## [0.1.0] - 2024-04-23
 
 First implementation
 
