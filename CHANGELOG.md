@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.2.1] - 2024-08-27
+
+### Changed
+
+- Minimum required Poolex version bumped to `~> 0.10.0`
+
 ## [0.2.0] - 2024-08-19
 
 ### Changed
@@ -23,7 +29,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 First implementation
 
-[unreleased]: https://github.com/general-CbIC/poolex_prom_ex/compare/v0.2.0...HEAD
+[unreleased]: https://github.com/general-CbIC/poolex_prom_ex/compare/v0.2.1...HEAD
+[0.2.1]: https://github.com/general-CbIC/poolex_prom_ex/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/general-CbIC/poolex_prom_ex/compare/v0.1.1...v0.2.0
 [0.1.1]: https://github.com/general-CbIC/poolex_prom_ex/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/general-CbIC/poolex_prom_ex/releases/tag/v0.1.0
