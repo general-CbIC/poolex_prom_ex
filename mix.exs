@@ -26,7 +26,7 @@ defmodule PoolexPromEx.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:poolex, "1.0.0-rc.0"},
+      {:poolex, "~> 1.0"},
       {:prom_ex, "~> 1.0"},
 
       # Development deps
