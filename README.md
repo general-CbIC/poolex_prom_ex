@@ -14,7 +14,7 @@ This is a plugin for your application to collect [Poolex's](https://github.com/g
 |-------------|-----------|
 | Erlang/OTP  | >= 24     |
 | Elixir      | >= 1.12   |
-| Poolex      | ~> 0.10.0 |
+| Poolex      | ~> 1.0    |
 
 ## Installation
 
