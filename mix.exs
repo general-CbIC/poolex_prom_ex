@@ -35,7 +35,8 @@ defmodule PoolexPromEx.MixProject do
       {:doctor, ">= 0.0.0", only: [:dev], runtime: false},
       {:ex_check, "~> 0.16.0", only: [:dev], runtime: false},
       {:ex_doc, ">= 0.0.0", only: [:dev], runtime: false},
-      {:makeup_diff, ">= 0.0.0", only: [:dev], runtime: false}
+      {:makeup_diff, ">= 0.0.0", only: [:dev], runtime: false},
+      {:styler, "~> 1.1", only: [:dev], runtime: false}
     ]
   end
 
