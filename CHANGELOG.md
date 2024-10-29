@@ -11,6 +11,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Added [adobe/elixir-styler](https://github.com/adobe/elixir-styler) to project.
 
+### Changed
+
+- Dependencies updates:
+  - `prom_ex` bumped to `1.11.0`
+  - added `plug ~> 1.16.0` because it is needed to compile `prom_ex`
+  - removed unused dependencies from mix.lock
+
 ## [1.0.0] - 2024-09-23
 
 ### Changed
