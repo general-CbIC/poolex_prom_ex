@@ -23,7 +23,7 @@ To use this plugin, you need to add `:poolex_prom_ex` to your dependencies in `m
   ```elixir
   defp deps do
     [
-      {:poolex_prom_ex, "~> 0.2.0"}
+      {:poolex_prom_ex, "~> 1.0"}
     ]
   end
   ```
