@@ -18,6 +18,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - added `plug ~> 1.16.0` because it is needed to compile `prom_ex`
   - removed unused dependencies from mix.lock
 
+#### Breaking changes
+
+- Minimum required ELixir version bumped to `~> 1.17` because it's new minimum required version for `poolex` now.
+
 ## [1.0.0] - 2024-09-23
 
 ### Changed

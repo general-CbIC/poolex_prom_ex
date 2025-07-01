@@ -7,7 +7,7 @@ defmodule PoolexPromEx.MixProject do
       deps: deps(),
       description: "PromEx integration for Poolex",
       docs: docs(),
-      elixir: "~> 1.12",
+      elixir: "~> 1.17",
       elixirc_options: [
         warnings_as_errors: true
       ],
@@ -27,7 +27,7 @@ defmodule PoolexPromEx.MixProject do
   defp deps do
     [
       {:plug, "~> 1.16"},
-      {:poolex, "~> 1.0"},
+      {:poolex, "~> 1.4"},
       {:prom_ex, "~> 1.0"},
 
       # Development deps
