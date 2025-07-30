@@ -12,9 +12,9 @@ This is a plugin for your application to collect [Poolex's](https://github.com/g
 
 | Requirement | Version   |
 |-------------|-----------|
-| Erlang/OTP  | >= 24     |
-| Elixir      | >= 1.12   |
-| Poolex      | ~> 1.0    |
+| Erlang/OTP  | >= 25     |
+| Elixir      | >= 1.17   |
+| Poolex      | ~> 1.4    |
 
 ## Installation
 
@@ -23,7 +23,7 @@ To use this plugin, you need to add `:poolex_prom_ex` to your dependencies in `m
   ```elixir
   defp deps do
     [
-      {:poolex_prom_ex, "~> 0.2.0"}
+      {:poolex_prom_ex, "~> 1.1"}
     ]
   end
   ```

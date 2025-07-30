@@ -7,14 +7,14 @@ defmodule PoolexPromEx.MixProject do
       deps: deps(),
       description: "PromEx integration for Poolex",
       docs: docs(),
-      elixir: "~> 1.12",
+      elixir: "~> 1.17",
       elixirc_options: [
         warnings_as_errors: true
       ],
       package: package(),
       source_url: "https://github.com/general-CbIC/poolex_prom_ex",
       start_permanent: Mix.env() == :prod,
-      version: "1.0.0"
+      version: "1.1.0"
     ]
   end
 
@@ -26,7 +26,8 @@ defmodule PoolexPromEx.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:poolex, "~> 1.0"},
+      {:plug, "~> 1.16"},
+      {:poolex, "~> 1.4"},
       {:prom_ex, "~> 1.0"},
 
       # Development deps
@@ -35,7 +36,8 @@ defmodule PoolexPromEx.MixProject do
       {:doctor, ">= 0.0.0", only: [:dev], runtime: false},
       {:ex_check, "~> 0.16.0", only: [:dev], runtime: false},
       {:ex_doc, ">= 0.0.0", only: [:dev], runtime: false},
-      {:makeup_diff, ">= 0.0.0", only: [:dev], runtime: false}
+      {:makeup_diff, ">= 0.0.0", only: [:dev], runtime: false},
+      {:styler, "~> 1.1", only: [:dev], runtime: false}
     ]
   end
 
